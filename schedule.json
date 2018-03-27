@@ -1,0 +1,10 @@
+[
+    [["Paris", "06h30", "06h30"], ["Montereau", "08h20", "08h30"], ["Laroche", "10h10", "10h20"], ["Tonnerre", "11h00", "11h30"], ["Nuits-sous-Ravieres", "12h00", "12h10"], ["Dijon", "14h20", "14h30"], ["Chagny", "15h40", "15h50"], ["Chalon-sur-Saone", "16h00", "16h10"], ["Macon", "17h20", "17h40"], ["Lyon", "19h30", "19h30"]],
+    [["Paris", "09h00", "09h00"], ["Montereau", "11h50", "14h00"], ["Paris", "16h50", "16h50"]],
+    [["Paris", "11h00", "11h00"], ["Montereau", "12h30", "12h40"], ["Laroche", "14h10", "14h20"], ["Tonnerre", "14h50", "15h00"], ["Dijon", "17h30", "18h10"], ["Chagny", "19h10", "19h20"], ["Chalon-sur-Saone", "19h30", "19h40"], ["Lyon", "22h10", "22h10"]],
+    [["Paris", "15h30", "15h30"], ["Montereau", "18h10", "18h30"], ["Tonnerre", "21h50", "21h50"]],
+    [["Lyon", "06h50", "06h50"], ["Macon", "08h20", "08h35"], ["Chalon-sur-Saone", "09h30", "09h40"], ["Chagny", "10h00", "10h10"], ["Dijon", "11h10", "11h40"], ["Tonnerre", "14h00", "14h10"], ["Laroche", "14h50", "15h00"], ["Montereau", "16h20", "16h30"], ["Paris", "18h00", "18h00"]],
+    [["Lyon", "09h30", "09h30"], ["Macon", "11h20", "11h30"], ["Chalon-sur-Saone", "12h40", "12h50"], ["Chagny", "13h10", "13h20"], ["Dijon", "14h30", "14h40"], ["Tonnerre", "17h30", "17h40"], ["Laroche", "18h50", "19h00"], ["Montereau", "20h30", "20h40"], ["Paris", "22h40", "22h40"]],
+    [["Lyon", "11h00", "11h00"], ["Macon", "13h30", "14h20"], ["Lyon", "17h00", "17h00"]],
+    [["Tonnerre", "19h40", "19h40"], ["Laroche", "20h50", "20h55"], ["Montereau", "22h50", "22h50"]]
+]

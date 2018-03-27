@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="d3/d3.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <title>CS1951A: The Wealth &amp; Health of Nations</title>
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+        <style type="text/css">
+        #chart {
+            margin-left: 40px;
+            height: 506px;
+        }
+
+        text {
+            font: 10px sans-serif;
+        }
+
+        .dot {
+            stroke: #000;
+        }
+
+        .axis path, .axis line {
+            fill: none;
+            stroke: #000;
+            shape-rendering: crispEdges;
+        }
+
+        .label {
+            fill: #777;
+        }
+
+        .year.label {
+            font: 500 196px "Helvetica Neue";
+            fill: #ddd;
+        }
+
+        .year.label.active {
+            fill: #aaa;
+        }
+
+        .overlay {
+            fill: none;
+            pointer-events: all;
+            cursor: ew-resize;
+        }
+        </style>
+    </head>
+    <body>
+        
+        <p id="chart"></p>
+        <script type="text/javascript" src="js/nations.js">
+        </script>
+        <div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			<div class="page-header center">
+				<h1>Assignment #5 <small>&laquo; D3 &raquo;</small></h1>
+			</div>
+
+			<h2>The Process</h2>
+            <pre>
+I started off by drawing the axis, labeling them and making sure the format was right for the axis ticks. Then I drew all the dots for the year 1800. The color scheme I used was d3.schemeCategory10.
+I then created the year label and the overlay for it. 
+Implementing the transition was largely filling out the tween year function with adjusts the dots given the current interpolated data.
+At everypoint it was important to make sure the dots were sorted so the smaller ones are on top of the bigger ones. Mouse move worked in the same way, however it is triggered by moving the mouse over the year label overlay instead of the transition.
+Enable interaction was filled in to allow the use of the mouse to change the graph by moving it over the year label.
+The voronoi layer was added so that the nearest dot to the mouse is focused on when the mouse is on the chart. I used d3.voronoi() for this with the data as voronoi.polygons(interpolateData(year)). in order to change the voronoi overlay when the data changes I created a function called changeVoronoi that is called with the data as the argument so that the voronoi overlay could be changed to reflect the current data being used in the animation or interaction with the mouse.
+I added a nice tidy label to popup when the mouse is on the chart so that it displayed the name of the nation of the current dot that is in focus. I made sure that the label floats next to where the dot is with a cool lime green background.
+
+</pre>
+
+		</div>
+	</div>
+
+    </body>
+</html>

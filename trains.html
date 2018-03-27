@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+        <title>CS1951A: Marey&rsquo;s Trains</title>
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+        <style type="text/css">
+            
+div.tooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: 60px;					
+    height: 28px;					
+    padding: 2px;				
+    font: 12px sans-serif;		
+    background: lightsteelblue;	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;			
+}
+        </style>
+    </head>
+    <body>
+        <p id="chart"></p>
+        <script type="text/javascript" src="js/trains.js"></script>
+        <div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			<div class="page-header center">
+				<h1>Assignment #5 <small>&laquo; D3 &raquo;</small></h1>
+			</div>
+
+			<h2>The Process</h2>
+            <pre>
+I started off by drawing the x axis. This meant formating the data so that it could be used in labeling. I created a formated set of the data where the times are replaced with the js date format. At the same time I found the max and min of the times in order to create the domain of the x axis. When I created the x axis I used a custom format for the ticks so that it displayed the ticks in the shown format on the graph. I had to create a second x axis element with a different style so that I could have a second axis across the top with the ticks above the line.
+I then added in the stations on the left of the graph so that the labels were at a distance apart that represented their actual distances. I then added a horizontal line for each station. 
+Adding the lines included making a function that turned the data into a string starting with M and then the scaled coordinates seperated by "L" to create a line. The mouse over function thickens the line and increases the opacity while the mouseout function does the opposite. 
+
+Extra credit: I then added a feature that draws a line on every start and stop of the highlighted train. This makes it clearer as to when the exact times are.
+
+I then added the feature which draws a vertical line that moves with the line. I organised it so the line disappears when a train line is highlighted.
+</pre>
+
+		</div>
+	</div>
+    </body>
+</html>
